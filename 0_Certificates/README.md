@@ -1,0 +1,1 @@
+This folder contains certificate of solo learn c and Cisco Linux certificate.
