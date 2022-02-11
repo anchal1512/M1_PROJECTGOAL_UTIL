@@ -15,7 +15,7 @@ ID              Description      status
 ID            Description        status
 
 ## SWOT
-# Strengths     # Weaknesses     # Opportunities     # Threats
+# Strengths     Weaknesses     Opportunities      Threats
 
 ## Requirements as per template 
 
