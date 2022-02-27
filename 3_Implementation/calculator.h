@@ -1,15 +1,15 @@
 
-#ifndef _SUM_H_
-#define _SUM_H_
+#ifndef _CALCULATOR_H_
+#define _CALCULATOR_H_
  
-void addition();
-void subtraction();
-void multiplication();
-void division();
-void modulus();
-void power();
-int factorial();
-void calculator_operations();
+void Add();
+void Sub();
+void Mul();
+void Div();
+void Mod();
+void Pow();
+int Fact();
+void CalculatorOperations();
 
 
  #endif

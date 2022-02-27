@@ -1,12 +1,11 @@
 
 #include "calculator.h"
-//#include "stdio.h"
 #include "stdio.h"
 #include "conio.h"
 #include "math.h"
 #include "stdlib.h"
 
-#define KEY "Enter the calculator Operation you want to do:"
+#define KEY "Enter the your choice with the calculator:"
 
 int main()
 {
@@ -14,7 +13,7 @@ int main()
     char Calc_oprn;
 
     // Function call 
-    calculator_operations();
+    CalculatorOperations();
 
     while(X)
     {
@@ -25,29 +24,29 @@ int main()
 
         switch(Calc_oprn)
         {
-            case '+': addition();
+            case '+': Add();
                       break;
 
-            case '-': subtraction();
+            case '-': Sub();
                       break;
 
-            case '*': multiplication();
+            case '*': Mul();
                       break;
 
-            case '/': division();
+            case '/': Div();
                       break;
 
-            case '?': modulus();
+            case '?': Mod();
                       break;
 
-            case '!': factorial();
+            case '!': Fact();
                       break;
 
-            case '^': power();
+            case '^': Pow();
                       break;
 
             case 'H':
-            case 'h': calculator_operations();
+            case 'h': CalculatorOperations();
                       break;
 
             case 'Q': exit(0);
@@ -56,16 +55,16 @@ int main()
                       break;
             case 'c':
             case 'C': system("cls");
-                      calculator_operations();
+                      CalculatorOperations();
                       break;
 
             default : system("cls");
 
-    printf("\n**********You have entered unavailable option");
+    printf("\nYou have entered invalid option");
     printf("***********\n");
-    printf("\n*****Please Enter any one of below available ");
+    printf("\n*****Please Enter from one of below available option thank you ");
     printf("options****\n");
-                      calculator_operations();
+                      CalculatorOperations();
         }
     }
 }

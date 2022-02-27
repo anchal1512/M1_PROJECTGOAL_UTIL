@@ -3,111 +3,111 @@
 #include "conio.h"
 #include "math.h"
 #include "stdlib.h"
-void calculator_operations()
+void CalculatorOperations()
 {
-    //system("cls");  use system function to clear 
-    //screen instead of clrscr();
-    printf("\n             Welcome to C calculator \n\n");
 
-    printf("******* Press 'Q' or 'q' to quit ");
-    printf("the program ********\n");
+    printf("\n");
+
+    printf("Come Lets Calculate together And Have fun \n");
+
+    printf("******* Press 'Q' or 'q' to quit \n ");
     printf("***** Press 'H' or 'h' to display ");
-    printf("below options *****\n\n");
-    printf("Enter 'C' or 'c' to clear the screen and");
-    printf(" display available option \n\n");
 
-    printf("Enter + symbol for Addition \n");
-    printf("Enter - symbol for Subtraction \n");
-    printf("Enter * symbol for Multiplication \n");
-    printf("Enter / symbol for Division \n");
-    printf("Enter ? symbol for Modulus\n");
-    printf("Enter ^ symbol for Power \n");
-    printf("Enter ! symbol for Factorial \n\n");
-    printf("Enter Q/q symbol for exit \n\n");
+    printf("Enter 'C'/'c' to clear the screen");
+
+    printf("Enter +  for Addition \n");
+    printf("Enter - for Subtraction \n");
+    printf("Enter * for Multiplication \n");
+    printf("Enter / for Division \n");
+    printf("Enter ? for Modulus\n");
+    printf("Enter ^ for Power \n");
+    printf("Enter ! for Factorial \t");
+
 }
 
-void addition()
+void Add()
 {
-    int n, total=0, k=0, number;
-    printf("\nEnter the number of elements you want to add:");
-    scanf("%d",&n);
-    printf(" Enter %d numbers one by one: \n",n);
-    while(k<n)
+    int N, total_SUM=0, M=0, NUMBER;
+    printf("\n");
+    printf("ENTER YOUR TOTAL NUMBER OF CHOICE TO ADD:");
+    scanf("%d",&N);
+    printf(" Enter %d NUMBER BY ONE BY ONE: \n",N);
+    while(M<N)
     { 
-        scanf("%d",&number);
-        total=total+number;
-        k=k+1;
+        scanf("%d",&NUMBER);
+        total_SUM=total_SUM+NUMBER;
+        M=M+1;
     }
-    printf("Sum of %d numbers = %d \n",n,total);
+    printf("Sum of total %d is = %d \n",N,total_SUM);
 }
 
-void subtraction()
+void Sub()
 { 
-    int a, b, c = 0; 
-    printf("\n Enter first number  : "); 
-    scanf("%d", &a); 
-    printf("Enter second number : "); 
-    scanf("%d", &b); 
-    c = a - b; 
-    printf("\n%d - %d = %d\n", a, b, c); 
+    int p, q, r = 0; 
+    printf("\n Enter you choice of first number  : "); 
+    scanf("%d", &p); 
+    printf("Enter you choice of  second number : "); 
+    scanf("%d", &q); 
+    r = p - q; 
+    printf("\n subtraction of %d - %d is = %d\n", p, q, r); 
 }
 
-void multiplication()
+void Mul()
 {
-    int a, b, mul=0; 
-    printf("\n Enter first number  : "); 
-    scanf("%d", &a); 
-    printf(" Enter second number: "); 
-    scanf("%d", &b);
-    mul=a*b;
-    printf("\nMultiplication of entered numbers = %d\n",mul);
+    int p, q, multi=0; 
+    printf("\n Enter you choice of  first number  : "); 
+    scanf("%d", &p); 
+    printf(" Enter you choice of  second number: "); 
+    scanf("%d", &q);
+    multi=p*q;
+    printf("\nMultiplication of choosed numbers are = %d\n",multi);
 }
 
-void division()
+void Div()
 {
-    int a, b, d=0; 
-    printf("\n Enter first number  : "); 
-    scanf("%d", &a); 
-    printf(" Enter second number : "); 
-    scanf("%d", &b);
-    d=a/b;
-    printf("\nDivision of entered numbers=%d\n",d);
+    int p, q, div=0; 
+    printf("\n Enter your choice of first number  : "); 
+    scanf("%d", &p); 
+    printf(" Enter your choice of second number : "); 
+    scanf("%d", &q);
+    div=p/q;
+    printf("\nDivision of your choosed numbers are=%d\n",div);
 }
 
-void modulus()
+void Mod()
 {
-    int a, b, d=0; 
-    printf("\n Enter first number   : "); 
-    scanf("%d", &a); 
-    printf(" Enter second number  : "); 
-    scanf("%d", &b);
-    d=a%b;
-    printf("\nModulus of entered numbers = %d\n",d);
+    int p, q, mod=0; 
+    printf("\n Enter your choice of first number   : "); 
+    scanf("%d", &p); 
+    printf(" Enter your choice of second number  : "); 
+    scanf("%d", &q);
+    mod=p%q;
+    printf("\nModulus of entered numbers = %d\n",mod);
 }
 
-void power()
+void Pow()
 {
-    double a,num, p;
-    printf("\nEnter two numbers to find the power \n");
+    double c,number, pow1;
+    printf("\nEnter the choice of your two numbers  \n");
     printf("number: ");
-    scanf("%lf",&a);
+    scanf("%lf",&c);
 
     printf("power : ");
-    scanf("%lf",&num);
+    scanf("%lf",&number);
 
-    p=pow(a,num);
+    pow1=pow(c,number);
 
-    printf("\n%lf to the power %lf = %lf \n",a,num,p);
+    printf("\n%lf to the power of %lf = %lf \n",c,number,pow1);
 }
 
-int factorial()
+int Fact()
 {
-    int i,fact=1,num;
+    int fact=1,number;
 
     printf("\nEnter a number to find factorial : ");
-    scanf("%d",&num);
+    scanf("%d",&number);
 
-    if (num<0)
+    if (number<0)
     {
         printf("\n Enter a positive number to");
         printf(" find factorial and try again. \n");
@@ -116,10 +116,10 @@ int factorial()
         return 1;
     }               
 
-    for(i=1;i<=num;i++)
+    for(int i=1;i<=number;i++)
     fact=fact*i;
     printf("\n");
-    printf("Factorial of entered number %d is:%d\n",num,fact);
+    printf("Factorial of your choice number %d is:%d\n",number,fact);
     return 0;
 }
 
