@@ -1,70 +1,67 @@
-
 #include "calculator.h"
-#include "stdio.h"
-#include "conio.h"
-#include "math.h"
-#include "stdlib.h"
 
-#define KEY "Enter the your choice with the calculator:"
 
-int main()
-{
+int main(){
     int X=1;
-    char Calc_oprn;
-
+    int n;
+    scanf("%d",&n);
+    int a,b;
+    scanf("%d",&a);
+    scanf("%d",&b);
     // Function call 
-    CalculatorOperations();
+    calculator_operations();
 
     while(X)
     {
         printf("\n");
-        printf("%s : ", KEY);
-
-        Calc_oprn=getche();
-
-        switch(Calc_oprn)
+        
+        scanf("%d",&n);
+        switch(n)
         {
-            case '+': Add();
+            case 1 : addition(a, b);
                       break;
 
-            case '-': Sub();
+            case 2 : subtraction(a,b);
                       break;
 
-            case '*': Mul();
+            case 3 : multiplication(a,b);
                       break;
 
-            case '/': Div();
+            case 4 : division(a, b);
                       break;
 
-            case '?': Mod();
+            case 5 : modulus(a,b);
                       break;
 
-            case '!': Fact();
+            case 6 : factorial(a);
                       break;
 
-            case '^': Pow();
+            case 7: power(a,b);
                       break;
 
-            case 'H':
-            case 'h': CalculatorOperations();
+          
+            case 8: calculator_operations();
                       break;
 
-            case 'Q': exit(0);
+            case 9 : exit(0);
                       break;
-            case 'q': exit(0);
-                      break;
-            case 'c':
-            case 'C': system("cls");
-                      CalculatorOperations();
+        
+            case 10:
+                      system("cls");
+                      calculator_operations();
                       break;
 
             default : system("cls");
 
-    printf("\nYou have entered invalid option");
+    printf("\n**********You have entered unavailable option");
     printf("***********\n");
-    printf("\n*****Please Enter from one of below available option thank you ");
+    printf("\n*****Please Enter any one of below available ");
     printf("options****\n");
-                      CalculatorOperations();
+                      calculator_operations();
         }
+        /* Initiate the Unity Test Framework */
+    
     }
+    
+
 }
