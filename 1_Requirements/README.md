@@ -1,7 +1,8 @@
 ## Research
 
  ## 4W's and 1'H 
-# WHO: The code is written by Anchal Tiwari
+# WHO: 
+The code is written by Anchal Tiwari
 
 # What:
 
