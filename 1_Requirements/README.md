@@ -5,10 +5,12 @@
 
 # What:
 
-# When: The problem occurs when I am making saparate folder like src, inc, test,unity,documentation.I am not understanding How to run code. When I pushed all files in 3_Implemantation It is working.
+# When: 
+The problem occurs when I am making saparate folder like src, inc, test,unity,documentation.I am not understanding How to run code. When I pushed all files in 3_Implemantation It is working.
 
 # Where: 
-# How: The problem will fix when save all files in one folder
+# How: 
+The problem will fix when save all files in one folder
 ## Detail requirements
 # High Level Requirements
 ID              Description      status
@@ -20,10 +22,13 @@ ID            Description        status
 
 ## SWOT:-
 
-# Strengths:- This is calculaltor project. You can add, subtract, multiply, divide,factorial and power using this calculator.
-# Weaknesses:- This is not Advance scientific calculator.It is normal calculator. 
+# Strengths:- 
+This is calculaltor project. You can add, subtract, multiply, divide,factorial and power using this calculator.
+# Weaknesses:- 
+This is not Advance scientific calculator.It is normal calculator. 
 # Opportunities:    
-# Threats:- Don't calculate complex problem by using this calculator like log problem and others. It is basic calculator.
+# Threats:- 
+Don't calculate complex problem by using this calculator like log problem and others. It is basic calculator.
 
 # Requirements as per template 
  
