@@ -49,13 +49,14 @@ Git repo push/commit
 Working Prototype for peer review and testing
 Folder Structure
 Updated Readme
-# use plateforms
+# Use plateforms
 For cocumenting code use doxyzen software.
 1. gitbash
 2. vs code
 3. Doxyzen
 4. bracket
-
+5. Tools: Ms Excel
+6. Framework:
 
 
  
