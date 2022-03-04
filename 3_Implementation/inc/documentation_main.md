@@ -1,2 +1,2 @@
-@mainpage Calculator Application by "Anchal Tiwari"
+@mainpage Calculator Utility by "Anchal Tiwari"
 	@subpage calculator.h
